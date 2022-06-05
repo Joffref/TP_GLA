@@ -32,7 +32,7 @@ TOTAL             39      1    97%
 # Exercie 3
 Dans cette partie, nous avons un avant-goût du concept de TDD.
 
-L'approche pour réaliser cette partie est celle de [Robert C. Martin](http://butunclebob.com/ArticleS.UncleBob.TheThreeRulesOfTdd]). C'est cette approche que nous utiliserons pour écrire notre code.
+L'approche pour réaliser cette partie est celle de [Robert C. Martin](http://butunclebob.com/ArticleS.UncleBob.TheThreeRulesOfTdd). C'est cette approche que nous utiliserons pour écrire notre code.
 ## Coverage des tests unitaires
 ```
 Name           Stmts   Miss  Cover   Missing
