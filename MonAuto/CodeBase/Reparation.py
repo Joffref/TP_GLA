@@ -9,14 +9,14 @@ class Reparation(object):
     """
     Class for the reparation.
     """
-    def __init__(self,  dateDeRecuperation: object, dateDeRestitution: object, TypeDeReparation: object, vehicule: object, client: object, moyenDePaiement: str, prix: float):
+    def __init__(self,  dateDeRecuperation: object, dateDeRestitution: object, typeDeReparation: object, vehicule: object, client: object, moyenDePaiement: str, prix: float):
         """
         Constructor of the reparation.
         """
         self.__dateDeDemande = datetime.datetime.now()
         self.__dateDeRecuperation = dateDeRecuperation
         self.__dateDeRestitution = dateDeRestitution
-        self.__typeDeReparation = TypeDeReparation
+        self.__typeDeReparation = typeDeReparation
         self.__vehicule = vehicule
         self._client = client
         self.__moyenDePaiement = moyenDePaiement
@@ -141,7 +141,7 @@ class Reparation(object):
             self.prix(0)
             return None
         
-        if self.TypeDeReparation == TypeDeReparation.SINISTRE:
+        if self.typeDeReparation == TypeDeReparation.SINISTRE:
             """
             If the reparation is a sinistre, the bill is send to insurance.
             """
@@ -177,7 +177,7 @@ class Reparation(object):
             self.dateDeDemande == other.dateDeDemande
             and self.dateDeRecuperation == other.dateDeRecuperation
             and self.dateDeRestitution == other.dateDeRestitution
-            and self.TypeDeReparation == other.TypeDeReparation
+            and self.typeDeReparation == other.typeDeReparation
             and self.vehicule == other.vehicule
             and self.client == other.client
             and self.moyenDePaiement == other.moyenDePaiement
